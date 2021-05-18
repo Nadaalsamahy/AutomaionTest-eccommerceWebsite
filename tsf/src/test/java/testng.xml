@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite  name="nopcommerce Regrission suite">
+<parameter name="browser" value="Firefox"></parameter> 
+
+ <test name="Regrission Test">
+    <classes>
+      <class name="test.UserRegisterationTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
