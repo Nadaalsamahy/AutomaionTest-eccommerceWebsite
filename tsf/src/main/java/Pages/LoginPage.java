@@ -10,17 +10,33 @@ public class LoginPage extends PageBase
 		super(driver);
 	}
 
-	@FindBy(id="Email")
+	@FindBy(xpath  = "/html/body/div[2]/header/div[1]/div/div/div[2]/div/ul/li[3]/div")
+	WebElement loginDropDown;
+	
+	@FindBy(linkText = "Login")
+	WebElement loginLink ;
+	
+	@FindBy(name="username")
 	WebElement emailTxtBox ; 
 
-	@FindBy(id="Password")
+	@FindBy(name="password")
 	WebElement passwordTxtBox ; 
 
-	@FindBy(xpath = "/html/body/div[6]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/button")
+	@FindBy(xpath = "/html/body/div[2]/div[1]/section/div/div[1]/div[2]/form/button")
 	WebElement loginBtn ; 
 	
+
+	@FindBy(css ="h3.text-align-left")
+	public WebElement loginSuccessMessage ; 
+	public void openLoginPage() {
+		
+		clickButton(loginDropDown);
+		clickButton(loginLink);
+		
+	}
 	public void UserLogin(String email , String password) 
 	{
+		
 		setTextElementText(emailTxtBox, email);
 		setTextElementText(passwordTxtBox, password);
 		clickButton(loginBtn);
