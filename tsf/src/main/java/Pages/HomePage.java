@@ -3,14 +3,17 @@ package Pages;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 public class HomePage extends PageBase{
 
 	public HomePage(WebDriver driver) {
 		super(driver);
 		jse =  (JavascriptExecutor)driver;
-		// TODO Auto-generated constructor stub
+		action =new Actions(driver);
+
 	}
 	
 	@FindBy(linkText="Register")
@@ -30,6 +33,7 @@ public class HomePage extends PageBase{
 	
 	@FindBy(linkText="Notebooks")
 	WebElement NotbooksMenu; 
+
 	
 	
 	public void openRegistrationPage() 
@@ -48,7 +52,19 @@ public class HomePage extends PageBase{
 		clickButton(contactUsLink);
 	}
 	
+	public void changeCurrency() {
+		select = new Select(currencydrl);
+		select.selectByVisibleText("Euro");
+	}
 	
-	
-	
+	public void selectNotebooksMenu() 
+	{
+		action
+		.moveToElement(ComputerMenu)
+		.moveToElement(NotbooksMenu)
+		.click()
+		.build()
+		.perform();
+	}
+
 }

@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.EmailFriendTest">
+      <class name="AddProductToCompareTest">
         <methods>
+          <include name="UserCanCompareProducts"/>
           <include name="startDriver"/>
+          <include name="userCanClearComparList"/>
           <include name="screenShotOnFailure"/>
-          <include name="RegisteredUserCanSendProductToFriend"/>
         </methods>
-      </class> <!-- test.EmailFriendTest -->
+      </class> <!-- AddProductToCompareTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

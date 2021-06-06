@@ -25,7 +25,7 @@ public class EmailPage extends PageBase{
     @FindBy(css = "div.result")
    	public WebElement messageNotification;
     
-    public void sendEmailToFriend(String friendEmail , String personalMessage ) {
+    public void sendEmailToFriend(String friendEmail ,String yourMail, String personalMessage ) {
 		setTextElementText(emailFriendTxt, friendEmail);
 		setTextElementText(personalMessageTxt, personalMessage);
 		clickButton(sendEmailBtn);

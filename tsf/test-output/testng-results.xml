@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-18T20:28:14 EET" name="Default suite" finished-at="2021-05-18T20:28:27 EET" duration-ms="12808">
+  <suite started-at="2021-06-06T03:34:08 EET" name="Default suite" finished-at="2021-06-06T03:34:22 EET" duration-ms="14231">
     <groups>
     </groups>
-    <test started-at="2021-05-18T20:28:14 EET" name="Default test" finished-at="2021-05-18T20:28:27 EET" duration-ms="12808">
-      <class name="test.EmailFriendTest">
-        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:test.EmailFriendTest@3c130745]" started-at="2021-05-18T20:27:50 EET" name="startDriver" finished-at="2021-05-18T20:28:14 EET" duration-ms="24070" status="PASS">
+    <test started-at="2021-06-06T03:34:08 EET" name="Default test" finished-at="2021-06-06T03:34:22 EET" duration-ms="14231">
+      <class name="test.AddProductReviewTest">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:test.AddProductReviewTest@63021689]" started-at="2021-06-06T03:33:58 EET" name="startDriver" finished-at="2021-06-06T03:34:08 EET" duration-ms="9964" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,102 +18,67 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="UserCanRegisterSuccssfully()[pri:1, instance:test.EmailFriendTest@3c130745]" started-at="2021-05-18T20:28:14 EET" name="UserCanRegisterSuccssfully" finished-at="2021-05-18T20:28:18 EET" duration-ms="4115" status="PASS">
+        <test-method signature="UserCanRegisterSuccssfully()[pri:1, instance:test.AddProductReviewTest@63021689]" started-at="2021-06-06T03:34:08 EET" name="UserCanRegisterSuccssfully" finished-at="2021-06-06T03:34:12 EET" duration-ms="4146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserCanRegisterSuccssfully -->
-        <test-method is-config="true" signature="screenShotOnFailure(org.testng.ITestResult)[pri:0, instance:test.EmailFriendTest@3c130745]" started-at="2021-05-18T20:28:18 EET" name="screenShotOnFailure" finished-at="2021-05-18T20:28:18 EET" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="screenShotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AddProductReviewTest@63021689]" started-at="2021-06-06T03:34:12 EET" name="screenShotOnFailure" finished-at="2021-06-06T03:34:12 EET" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UserCanRegisterSuccssfully status=SUCCESS method=EmailFriendTest.UserCanRegisterSuccssfully()[pri:1, instance:test.EmailFriendTest@3c130745] output={null}]]]>
+                <![CDATA[[TestResult name=UserCanRegisterSuccssfully status=SUCCESS method=AddProductReviewTest.UserCanRegisterSuccssfully()[pri:1, instance:test.AddProductReviewTest@63021689] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShotOnFailure -->
-        <test-method signature="userCanSearchWithAutoSuggest()[pri:2, instance:test.EmailFriendTest@3c130745]" started-at="2021-05-18T20:28:18 EET" name="userCanSearchWithAutoSuggest" finished-at="2021-05-18T20:28:24 EET" duration-ms="5858" status="PASS">
+        <test-method signature="userCanSearchWithAutoSuggest()[pri:2, instance:test.AddProductReviewTest@63021689]" started-at="2021-06-06T03:34:12 EET" name="userCanSearchWithAutoSuggest" finished-at="2021-06-06T03:34:19 EET" duration-ms="6235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCanSearchWithAutoSuggest -->
-        <test-method is-config="true" signature="screenShotOnFailure(org.testng.ITestResult)[pri:0, instance:test.EmailFriendTest@3c130745]" started-at="2021-05-18T20:28:24 EET" name="screenShotOnFailure" finished-at="2021-05-18T20:28:24 EET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenShotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AddProductReviewTest@63021689]" started-at="2021-06-06T03:34:19 EET" name="screenShotOnFailure" finished-at="2021-06-06T03:34:19 EET" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=userCanSearchWithAutoSuggest status=SUCCESS method=EmailFriendTest.userCanSearchWithAutoSuggest()[pri:2, instance:test.EmailFriendTest@3c130745] output={null}]]]>
+                <![CDATA[[TestResult name=userCanSearchWithAutoSuggest status=SUCCESS method=AddProductReviewTest.userCanSearchWithAutoSuggest()[pri:2, instance:test.AddProductReviewTest@63021689] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShotOnFailure -->
-        <test-method signature="RegisteredUserCanSendProductToFriend()[pri:3, instance:test.EmailFriendTest@3c130745]" started-at="2021-05-18T20:28:24 EET" name="RegisteredUserCanSendProductToFriend" finished-at="2021-05-18T20:28:24 EET" duration-ms="4" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at test.EmailFriendTest.RegisteredUserCanSendProductToFriend(EmailFriendTest.java:57)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="RegisteredUserCanReviewProduct()[pri:3, instance:test.AddProductReviewTest@63021689]" started-at="2021-06-06T03:34:19 EET" name="RegisteredUserCanReviewProduct" finished-at="2021-06-06T03:34:21 EET" duration-ms="2838" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RegisteredUserCanSendProductToFriend -->
-        <test-method is-config="true" signature="screenShotOnFailure(org.testng.ITestResult)[pri:0, instance:test.EmailFriendTest@3c130745]" started-at="2021-05-18T20:28:24 EET" name="screenShotOnFailure" finished-at="2021-05-18T20:28:24 EET" duration-ms="158" status="PASS">
+        </test-method> <!-- RegisteredUserCanReviewProduct -->
+        <test-method is-config="true" signature="screenShotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AddProductReviewTest@63021689]" started-at="2021-06-06T03:34:21 EET" name="screenShotOnFailure" finished-at="2021-06-06T03:34:21 EET" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=RegisteredUserCanSendProductToFriend status=FAILURE method=EmailFriendTest.RegisteredUserCanSendProductToFriend()[pri:3, instance:test.EmailFriendTest@3c130745] output={null}]]]>
+                <![CDATA[[TestResult name=RegisteredUserCanReviewProduct status=SUCCESS method=AddProductReviewTest.RegisteredUserCanReviewProduct()[pri:3, instance:test.AddProductReviewTest@63021689] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShotOnFailure -->
-        <test-method signature="RegisteredUserCanLogout()[pri:4, instance:test.EmailFriendTest@3c130745]" started-at="2021-05-18T20:28:24 EET" name="RegisteredUserCanLogout" finished-at="2021-05-18T20:28:27 EET" duration-ms="2569" status="PASS">
+        <test-method signature="RegisteredUserCanLogout()[pri:4, instance:test.AddProductReviewTest@63021689]" started-at="2021-06-06T03:34:21 EET" name="RegisteredUserCanLogout" finished-at="2021-06-06T03:34:22 EET" duration-ms="899" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisteredUserCanLogout -->
-        <test-method is-config="true" signature="screenShotOnFailure(org.testng.ITestResult)[pri:0, instance:test.EmailFriendTest@3c130745]" started-at="2021-05-18T20:28:27 EET" name="screenShotOnFailure" finished-at="2021-05-18T20:28:27 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenShotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AddProductReviewTest@63021689]" started-at="2021-06-06T03:34:22 EET" name="screenShotOnFailure" finished-at="2021-06-06T03:34:22 EET" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=RegisteredUserCanLogout status=SUCCESS method=EmailFriendTest.RegisteredUserCanLogout()[pri:4, instance:test.EmailFriendTest@3c130745] output={null}]]]>
+                <![CDATA[[TestResult name=RegisteredUserCanLogout status=SUCCESS method=AddProductReviewTest.RegisteredUserCanLogout()[pri:4, instance:test.AddProductReviewTest@63021689] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShotOnFailure -->
-      </class> <!-- test.EmailFriendTest -->
+      </class> <!-- test.AddProductReviewTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

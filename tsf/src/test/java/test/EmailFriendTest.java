@@ -29,7 +29,7 @@ public class EmailFriendTest extends TestBase {
 		homeObject = new HomePage(driver); 
 		homeObject.openRegistrationPage();
 		registerObject = new UserRegistrationPage(driver); 
-		registerObject.userRegistration("Moataz", "Nabil", "testnadatalaat@gmail.com", "12345678");
+		registerObject.userRegistration("Moataz", "Nabil", "test12345@gmail.com", "12345678");
 		Assert.assertTrue(registerObject.successMessage.getText().contains("Your registration completed"));
 	}
 	
@@ -51,13 +51,15 @@ public class EmailFriendTest extends TestBase {
 	} 
 	//3- email to friend
 	
-	@Test(priority = 3)
-	public void RegisteredUserCanSendProductToFriend() {
-		
+	@Test(priority=3)
+	public void RegisteredUserCanSendProductToFriend() 
+	{		
+		detailsObject = new ProductDetailsPage(driver);
+
 		detailsObject.openSendEmail();
-		emailObject = new EmailPage(driver);
-		emailObject.sendEmailToFriend("aaa@test.com", "hello my friend , check this product");
-		//Assert.assertTrue(emailObject.messageNotification.getText().contains("Your message has been sent "));
+		emailObject = new EmailPage(driver); 
+		emailObject.sendEmailToFriend("asmaa123@gmail.com","nada100200@gmail.com", "Hello my friend , check this product");
+		Assert.assertTrue(emailObject.messageNotification.getText().contains("Your message has been sent."));
 	}
 	
 	//4- user logout
